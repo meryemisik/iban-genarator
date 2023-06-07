@@ -1,0 +1,117 @@
+.textarea-input{
+  opacity: 0;
+  height: 0;
+  width: 0;
+  padding: 0 !important;
+  position: absolute !important;
+    left: -500px !important;
+}
+  .iban {
+    min-height: calc(100vh - 96px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-generator {
+      margin: auto;
+      background-color: white;
+      padding: 30px;
+      border-radius: 12px;
+      width: clamp(300px, 40%, 800px);
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+
+      @media only screen and (max-width: 1279px) {
+        width: 60%;
+      }
+      @media only screen and (max-width: 991px) {
+        width: 80%;
+      }
+      @media only screen and (max-width: 767px) {
+        width: 90%;
+      }
+
+      .country-change {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        &-select {
+          width: 100%;
+        }
+
+        &-button {
+          // position: fixed;
+          // top: 120px;
+          // right: 20px;
+          // z-index: 2;
+          line-height: 36px !important;
+          height: 36px !important;
+          width: 30%;
+          color: #DFF9F5;
+          background-color: #28D7BE;
+          text-transform: uppercase;
+        }
+      }
+
+      .ant-select-selection {
+        height: 36px;
+        width: 50%;
+
+        &__rendered {
+          line-height: 36px;
+        }
+      }
+    }
+
+    .random-iban {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 20px 0;
+
+      &-title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // margin: 20px 0;
+      }
+
+      &-result {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // margin: 20px 0;
+        // gap: 30px;
+      }
+
+      &-current-iban {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+        border: 2px solid #D9E0E2;
+        border-radius: 12px;
+        // margin-bottom: 30px;
+        width: 100%;
+        gap: 2px;
+        align-items: center;
+        justify-content: space-between;
+        word-wrap:break-word;
+      }
+
+      &-copy-icon {
+        color: #DFF9F5;
+        background-color: #28D7BE;
+        padding: 10px;
+        border-radius: 100%;
+        height: 50px;
+        width: 50px;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: .5;
+      }
+    }
+  }

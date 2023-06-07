@@ -1,4 +1,4 @@
-# deneme
+# iban-genarator
 
 ## Project setup
 ```
